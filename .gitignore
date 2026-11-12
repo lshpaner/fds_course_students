@@ -1,0 +1,34 @@
+# data is never committed
+data/
+figures/
+
+# virtual environments, any name
+.venv/
+venv/
+env/
+.env/
+*venv*/
+.conda/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# secrets (LLM API keys for week 12)
+.env
+
+# WSL / Windows download metadata
+*:Zone.Identifier
+
+# editor / os
+.vscode/
+.idea/
+.DS_Store
+_site/
+_freeze/.jupyter_cache/
+/.quarto/
+
+**/*.quarto_ipynb
+_freeze/
