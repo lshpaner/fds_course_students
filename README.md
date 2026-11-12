@@ -4,7 +4,7 @@
 
 # Foundations of Data Science: student materials
 
-Lecture notebooks, assignments, and the project brief for a graduate Foundations of Data Science course, built around one real dataset
+Lecture notebooks, assignments, and the project brief for a Foundations of Data Science course, built around one real dataset
 (CDC NHANES 2017-2018) that you carry from first contact through a fairness audit, with a flu time series, a hospital contact network,
 and a text corpus for the later weeks.
 

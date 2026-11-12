@@ -1,6 +1,6 @@
 # Foundations of Data Science: Course Map
 
-Graduate level, one meeting per week, online or in person. Materials are Python/Jupyter (Colab-ready). Grading: assignments 30%, quizzes 25%, project 35%, participation 10%.
+Upper-division undergraduate or graduate level, one meeting per week, online or in person. Materials are Python/Jupyter (Colab-ready). Grading: assignments 30%, quizzes 25%, project 35%, participation 10%.
 
 A single real dataset, the CDC's NHANES 2017-2018 survey, runs from week 1 through week 9 and returns in week 13, so students build one pipeline and keep extending it. Weeks 10 through 12 bring in a weekly flu series, a hospital contact network, and a text corpus.
 
