@@ -35,12 +35,12 @@ Every item below maps to a week of the course, and the rubric scores each one.
 
 You may pick one of these or bring your own. Each has public data; part of the project is finding and vetting it.
 
-- Which neighborhoods should a city prioritize for traffic-calming, given collision records? (city open-data portals: LA, NYC, Chicago)
-- Can a clinic predict which patients will miss appointments, and what would it do with the prediction? (public no-show datasets; NHANES access-to-care modules)
-- Where should a bike-share add docks, based on trip and station data? (Citi Bike, Divvy, Metro Bike Share)
-- Which factors predict whether a Kickstarter campaign funds, and what should a creator change? (Kaggle)
-- Is air quality in a city improving, and does the answer depend on where you live? (EPA AirNow, OpenAQ)
-- When will the next flu season peak in a given HHS region, and how far ahead can a hospital plan staffing? (CDC FluView via Delphi Epidata)
+- Which neighborhoods should a city prioritize for traffic-calming, given collision records? (city open-data portals: [LA](https://data.lacity.org/), [NYC](https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95), [Chicago](https://data.cityofchicago.org/))
+- Can a clinic predict which patients will miss appointments, and what would it do with the prediction? ([public no-show dataset](https://www.kaggle.com/datasets/joniarroba/noshowappointments); [NHANES](https://wwwn.cdc.gov/nchs/nhanes/) access-to-care modules)
+- Where should a bike-share add docks, based on trip and station data? ([Citi Bike](https://citibikenyc.com/system-data), [Divvy](https://divvybikes.com/system-data), [Metro Bike Share](https://bikeshare.metro.net/about/data/))
+- Which factors predict whether a Kickstarter campaign funds, and what should a creator change? ([Kaggle](https://www.kaggle.com/datasets/kemical/kickstarter-projects))
+- Is air quality in a city improving, and does the answer depend on where you live? ([EPA AirNow](https://www.airnow.gov/), [OpenAQ](https://openaq.org/))
+- When will the next flu season peak in a given HHS region, and how far ahead can a hospital plan staffing? ([CDC FluView via Delphi Epidata](https://cmu-delphi.github.io/delphi-epidata/api/fluview.html))
 - Which hospital-ward staff should be prioritized for vaccination to slow an outbreak? (SocioPatterns contact networks)
 - Does lab-measured diabetes (HbA1c) tell a different fairness story than self-reported diabetes? (NHANES `GHB_J`; extends week 13)
 
