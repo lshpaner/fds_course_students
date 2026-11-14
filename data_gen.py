@@ -30,7 +30,7 @@ def list_datasets() -> None:
     """Print every dataset registered in core/datasets.py."""
     width = max(len(name) for name in REGISTRY)
     for name, spec in REGISTRY.items():
-        typer.echo(f"{name:<{width}}  weeks {spec['weeks']}  {spec['description']}")
+        typer.echo(f"{name:<{width}}  chapters {spec['chapters']}  {spec['description']}")
 
 
 @app.command("fetch")

@@ -60,9 +60,9 @@ preprocess:
 lab:
 	jupyter lab
 
-## Execute every week's lecture notebook in place (smoke test)
+## Execute every chapter's lecture notebook in place (smoke test)
 run_notebooks:
-	for nb in $(NOTEBOOK_DIR)/week_*/*.ipynb; do \
+	for nb in $(NOTEBOOK_DIR)/chapter_*/*.ipynb; do \
 		jupyter nbconvert --to notebook --execute --inplace $$nb; \
 	done
 

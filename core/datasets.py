@@ -2,7 +2,7 @@
 core/datasets.py
 
 Registry of raw course datasets and a single fetch function.
-Each entry records where the data comes from, which weeks use it,
+Each entry records where the data comes from, which chapters use it,
 and a loader that returns a raw pandas DataFrame. Nothing is cleaned
 here; that is preprocessing.py's job.
 """
@@ -62,7 +62,7 @@ def _wine() -> pd.DataFrame:
 
 
 def _newsgroups() -> pd.DataFrame:
-    # Text corpus for the language-models week. Four categories keep it small.
+    # Text corpus for the language-models chapter. Four categories keep it small.
     from sklearn.datasets import fetch_20newsgroups
 
     cats = ["sci.med", "sci.space", "rec.sport.baseball", "talk.politics.misc"]
@@ -121,82 +121,82 @@ def _hospital_contacts() -> pd.DataFrame:
 REGISTRY: dict[str, dict] = {
     "penguins": {
         "loader": _seaborn("penguins"),
-        "weeks": [1, 4, 9],
+        "chapters": [1, 4, 9],
         "description": "Palmer penguins; small, clean-ish, good first dataset.",
     },
     "nhanes_demo": {
         "loader": _nhanes("DEMO_J"),
-        "weeks": [2, 7, 8],
+        "chapters": [2, 7, 8],
         "description": "NHANES 2017-18 demographics (age, sex, race, income, survey weights).",
     },
     "nhanes_bmx": {
         "loader": _nhanes("BMX_J"),
-        "weeks": [2, 7, 8],
+        "chapters": [2, 7, 8],
         "description": "NHANES 2017-18 body measures (weight, height, BMI, waist).",
     },
     "nhanes_bpx": {
         "loader": _nhanes("BPX_J"),
-        "weeks": [2, 7, 8],
+        "chapters": [2, 7, 8],
         "description": "NHANES 2017-18 blood pressure exam readings.",
     },
     "nhanes_diq": {
         "loader": _nhanes("DIQ_J"),
-        "weeks": [2, 7, 8],
+        "chapters": [2, 7, 8],
         "description": "NHANES 2017-18 diabetes questionnaire (classification target).",
     },
     "nhanes_smq": {
         "loader": _nhanes("SMQ_J"),
-        "weeks": [2],
+        "chapters": [2],
         "description": "NHANES 2017-18 smoking questionnaire (HW1; skip patterns).",
     },
     "nhanes_bpq": {
         "loader": _nhanes("BPQ_J"),
-        "weeks": [2],
+        "chapters": [2],
         "description": "NHANES 2017-18 blood pressure / cholesterol questionnaire (HW1).",
     },
     "nhanes_ghb": {
         "loader": _nhanes("GHB_J"),
-        "weeks": [13],
+        "chapters": [13],
         "description": "NHANES 2017-18 glycohemoglobin (HbA1c) lab values (HW7; lab-measured diabetes label).",
     },
     "fluview": {
         "loader": _fluview,
-        "weeks": [10],
+        "chapters": [10],
         "description": "CDC FluView national weekly ILI, 2010-2025, via CMU Delphi Epidata (time series).",
     },
     "hospital_contacts": {
         "loader": _hospital_contacts,
-        "weeks": [11],
+        "chapters": [11],
         "description": "SocioPatterns hospital ward face-to-face contacts (75 people, 5 days); network analysis.",
     },
     "tips": {
         "loader": _seaborn("tips"),
-        "weeks": [3, 5],
+        "chapters": [3, 5],
         "description": "Restaurant tips; statistics recap and visualization.",
     },
     "diamonds": {
         "loader": _seaborn("diamonds"),
-        "weeks": [6],
+        "chapters": [6],
         "description": "Diamond prices; regression with mixed feature types.",
     },
     "flights": {
         "loader": _seaborn("flights"),
-        "weeks": [10],
+        "chapters": [10],
         "description": "Monthly airline passengers 1949-1960; time series.",
     },
     "adult": {
         "loader": _adult,
-        "weeks": [7, 8, 13],
+        "chapters": [7, 8, 13],
         "description": "UCI Adult income; classification, evaluation, fairness.",
     },
     "wine": {
         "loader": _wine,
-        "weeks": [9],
+        "chapters": [9],
         "description": "UCI Wine chemistry; clustering and PCA.",
     },
     "newsgroups": {
         "loader": _newsgroups,
-        "weeks": [12],
+        "chapters": [12],
         "description": "20 Newsgroups subset; embeddings and language models.",
     },
 }

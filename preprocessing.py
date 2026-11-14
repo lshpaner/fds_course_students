@@ -2,7 +2,7 @@
 preprocessing.py
 
 Cleaning and feature engineering for course datasets. Reads raw Parquet
-from data/raw/ and writes cleaned Parquet to data/processed/. Each week
+from data/raw/ and writes cleaned Parquet to data/processed/. Each chapter
 that needs a cleaned table gets its own function here so students can
 read exactly what was done to the data.
 
@@ -20,7 +20,7 @@ PROCESSED_DIR = Path(__file__).resolve().parent / "data" / "processed"
 
 
 def build_nhanes() -> pd.DataFrame:
-    """Week 2 / 7 / 8: merge the four NHANES components on SEQN, keep a
+    """Chapter 2 / 7 / 8: merge the four NHANES components on SEQN, keep a
     small analysis set, and recode the diabetes question to 0/1."""
     demo = load_raw("nhanes_demo")[
         ["SEQN", "RIAGENDR", "RIDAGEYR", "RIDRETH3", "INDFMPIR", "WTMEC2YR"]
@@ -46,7 +46,7 @@ def build_nhanes() -> pd.DataFrame:
 
 
 def clean_adult(df: pd.DataFrame) -> pd.DataFrame:
-    """Week 7 / 8 / 13: binary target, trimmed strings."""
+    """Chapter 7 / 8 / 13: binary target, trimmed strings."""
     out = df.copy()
     out["income"] = (out["income"].str.strip() == ">50K").astype(int)
     return out

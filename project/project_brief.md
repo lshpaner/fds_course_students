@@ -12,22 +12,22 @@ Your write-up must be able to answer, in its first paragraph: who decides, what 
 
 | | When | What | Weight (of 35) |
 |---|---|---|---|
-| 1. Problem statement | week 4 | one page: the decision, who makes it, what data exists, what has been tried, the first two rows of your findings log | 5 |
-| 2. Proposal pitch | week 6 | five-minute talk: the question, the data you have *actually loaded*, one summary table or plot, your plan and its risks | 5 |
-| 3. Final notebook and talk | week 14 | a notebook that runs top to bottom from raw data, a 12-minute talk, and a two-page summary written for the decision-maker | 25 |
+| 1. Problem statement | chapter 4 | one page: the decision, who makes it, what data exists, what has been tried, the first two rows of your findings log | 5 |
+| 2. Proposal pitch | chapter 6 | five-minute talk: the question, the data you have *actually loaded*, one summary table or plot, your plan and its risks | 5 |
+| 3. Final notebook and talk | chapter 14 | a notebook that runs top to bottom from raw data, a 12-minute talk, and a two-page summary written for the decision-maker | 25 |
 
 ## What the final deliverable has to contain
 
-Every item below maps to a week of the course, and the rubric scores each one.
+Every item below maps to a chapter of the course, and the rubric scores each one.
 
-1. **The decision** (week 1): who, what changes, cost of each error.
-2. **Data handling** (week 2): how the data were obtained and joined; every missing-data decision, written down with the mechanism you assumed.
-3. **Uncertainty** (week 3): every headline number carries an interval.
-4. **EDA and the findings log** (week 4): what you saw before modeling, and which rows of the log you tested.
-5. **One decision-maker chart** (week 5): the finding as the title, source line, honest axes.
-6. **Modeling** (weeks 6 through 12, whichever apply): a baseline that costs nothing, the model you chose, and why the gap over the baseline is worth the complexity.
-7. **Evaluation** (week 8): on held-out data, at the operating point the decision-maker would use, with a bootstrap interval, and a comparison to the baseline.
-8. **Fairness** (week 13): per-group performance for whatever groups the decision touches, and one sentence on who bears the cost of each kind of error.
+1. **The decision** (chapter 1): who, what changes, cost of each error.
+2. **Data handling** (chapter 2): how the data were obtained and joined; every missing-data decision, written down with the mechanism you assumed.
+3. **Uncertainty** (chapter 3): every headline number carries an interval.
+4. **EDA and the findings log** (chapter 4): what you saw before modeling, and which rows of the log you tested.
+5. **One decision-maker chart** (chapter 5): the finding as the title, source line, honest axes.
+6. **Modeling** (chapters 6 through 12, whichever apply): a baseline that costs nothing, the model you chose, and why the gap over the baseline is worth the complexity.
+7. **Evaluation** (chapter 8): on held-out data, at the operating point the decision-maker would use, with a bootstrap interval, and a comparison to the baseline.
+8. **Fairness** (chapter 13): per-group performance for whatever groups the decision touches, and one sentence on who bears the cost of each kind of error.
 9. **The recommendation**: in the decision-maker's units, with the trade-offs visible.
 10. **Reproducibility**: `make data_gen` style fetch script, gitignored data, a notebook that runs clean, a README that says how.
 
@@ -42,7 +42,7 @@ You may pick one of these or bring your own. Each has public data; part of the p
 - Is air quality in a city improving, and does the answer depend on where you live? ([EPA AirNow](https://www.airnow.gov/), [OpenAQ](https://openaq.org/))
 - When will the next flu season peak in a given HHS region, and how far ahead can a hospital plan staffing? ([CDC FluView via Delphi Epidata](https://cmu-delphi.github.io/delphi-epidata/api/fluview.html))
 - Which hospital-ward staff should be prioritized for vaccination to slow an outbreak? (SocioPatterns contact networks)
-- Does lab-measured diabetes (HbA1c) tell a different fairness story than self-reported diabetes? (NHANES `GHB_J`; extends week 13)
+- Does lab-measured diabetes (HbA1c) tell a different fairness story than self-reported diabetes? (NHANES `GHB_J`; extends chapter 13)
 
 ## Data rules
 

@@ -16,7 +16,7 @@ __pycache__/
 *.egg-info/
 .ipynb_checkpoints/
 
-# secrets (LLM API keys for week 12)
+# secrets (LLM API keys for chapter 12)
 .env
 
 # WSL / Windows download metadata
