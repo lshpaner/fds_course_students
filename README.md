@@ -12,9 +12,9 @@ and a text corpus for the later weeks.
 
 Author: Leon Shpaner, M.S. All materials are original and owned by the author.
 
-## Lectures
+## Chapters
 
-| Week | Lecture | Run it |
+| Chapter | Lecture | Run it |
 |---|---|---|
 | 1 | [What Data Science Is, and How We Work](https://lshpaner.github.io/fds_course/notebooks/week_01/week_01_intro.html) | [Colab](https://colab.research.google.com/github/lshpaner/fds_course_students/blob/main/notebooks/week_01/week_01_intro.ipynb) |
 | 2 | [Data Handling, Joins, and Missing Data](https://lshpaner.github.io/fds_course/notebooks/week_02/week_02_data_handling.html) | [Colab](https://colab.research.google.com/github/lshpaner/fds_course_students/blob/main/notebooks/week_02/week_02_data_handling.ipynb) |
@@ -50,7 +50,7 @@ make lab
 ## Layout
 
 ```
-notebooks/      one folder per week, lecture notebooks
+notebooks/      one folder per chapter (week_NN), lecture notebooks
 assignments/    one folder per week, homework notebooks
 project/        project brief and rubric
 docs/           course map
